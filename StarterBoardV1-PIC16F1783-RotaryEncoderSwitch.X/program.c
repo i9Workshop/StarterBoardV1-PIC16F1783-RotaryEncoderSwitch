@@ -44,7 +44,7 @@ void programInitialize(void) {
     D6_Pin = 0;
     D7_Pin = 0;
     
-	// Pin for rotary encoder and knob switch
+    // Pin for rotary encoder and knob switch
     TRISAbits.TRISA5 = 1;
     TRISCbits.TRISC0 = 1;
     TRISCbits.TRISC2 = 1;
