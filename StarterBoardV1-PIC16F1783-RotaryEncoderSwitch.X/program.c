@@ -37,18 +37,19 @@ void programInitialize(void) {
     ANSELBbits.ANSB2 = 0;
     ANSELBbits.ANSB1 = 0;
     
-    TRISAbits.TRISA5 = 1;
-    TRISCbits.TRISC0 = 1;
-    TRISCbits.TRISC2 = 1;
-    
-    ANSELAbits.ANSA5 = 0;
-    
     RS_Pin = 0;
     E_Pin = 0;
     D4_Pin = 0;
     D5_Pin = 0;
     D6_Pin = 0;
     D7_Pin = 0;
+    
+	// Pin for rotary encoder and knob switch
+    TRISAbits.TRISA5 = 1;
+    TRISCbits.TRISC0 = 1;
+    TRISCbits.TRISC2 = 1;
+    
+    ANSELAbits.ANSA5 = 0;
     
     lcd_Initialize();
 }
